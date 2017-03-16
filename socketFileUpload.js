@@ -16,7 +16,7 @@ function socketFileUpload() {
         bindToController: true
     }
 }
-//  <label class="fa fa-paperclip fa-lg paperclip-icon" for="file" aria-hidden="true"></label>
+
 socketFileUploadController.$inject = ['ChatService']
 
 function socketFileUploadController(ChatService) {
