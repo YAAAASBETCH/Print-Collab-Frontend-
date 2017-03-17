@@ -1,6 +1,6 @@
 /* global angular */
 'use strict'
-
+(function() {
 angular.module('public.helpchat', ['ui.router'])
     .config(function($stateProvider) {
         $stateProvider
@@ -17,3 +17,4 @@ angular.module('public.helpchat', ['ui.router'])
                     }
                 })
     })
+}();
