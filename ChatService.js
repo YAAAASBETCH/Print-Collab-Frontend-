@@ -1,6 +1,7 @@
 /* global angular io */
 'use strict'
 
+(function(){
 angular.module('public.helpchat')
     .factory('ChatService', ChatServiceFactory)
 
@@ -69,3 +70,4 @@ function ChatServiceFactory($http, $rootScope) {
         return $http.get('api/chat/search/' + str)
     }
 }
+}();
