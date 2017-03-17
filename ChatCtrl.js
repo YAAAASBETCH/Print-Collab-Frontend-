@@ -1,6 +1,7 @@
 /* global angular */
 'use strict'
 
+(function() {
 angular.module('public.helpchat')
     .controller('HelpChatController', HelpChatController)
 
@@ -53,3 +54,4 @@ function HelpChatController(ChatService, $state, $scope, $timeout) {
         })
     }
 }
+}();
