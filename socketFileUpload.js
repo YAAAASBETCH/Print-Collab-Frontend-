@@ -1,5 +1,6 @@
 angular.module('public.helpchat').directive('socketFileUpload', socketFileUpload)
 
+(function() {
 function socketFileUpload() {
     return {
         restrict: 'E',
@@ -41,4 +42,5 @@ function socketFileUploadLink($scope, $element, $attrs, ctrl) {
     $element.on('change', function(event) {
         ctrl.uploadFile(event.target.files[0])
     })
-}
+ }
+}();
